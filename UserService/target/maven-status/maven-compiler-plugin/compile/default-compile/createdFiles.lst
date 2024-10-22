@@ -1,0 +1,11 @@
+com\hotel\userservice\exception\Validator.class
+com\hotel\userservice\service\UserService.class
+com\hotel\userservice\controller\UserControls.class
+com\hotel\userservice\config\ConfigRest.class
+com\hotel\userservice\Repo\UserRepo.class
+com\hotel\userservice\UserServiceApplication.class
+com\hotel\userservice\exception\RoleInvalidException.class
+com\hotel\userservice\models\AppUser.class
+com\hotel\userservice\exception\GlobalExceptionHandler.class
+com\hotel\userservice\models\Role.class
+com\hotel\userservice\exception\ResourcesNotFoundException.class
