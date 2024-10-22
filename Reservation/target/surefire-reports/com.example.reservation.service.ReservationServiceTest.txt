@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.example.reservation.service.ReservationServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.249 s <<< FAILURE! -- in com.example.reservation.service.ReservationServiceTest
+com.example.reservation.service.ReservationServiceTest.saveReservation_ShouldThrowException_WhenRoomUnavailable -- Time elapsed: 0.013 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <com.example.reservation.exceptions.RoomUnavailableException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.example.reservation.service.ReservationServiceTest.saveReservation_ShouldThrowException_WhenRoomUnavailable(ReservationServiceTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.client.RestTemplate.getForObject(String, java.lang.Class, Object[])" because "this.restTemplate" is null
+	at com.example.reservation.service.ReservationService.isRoomAvailable(ReservationService.java:84)
+	at com.example.reservation.service.ReservationService.saveReservation(ReservationService.java:35)
+	at com.example.reservation.service.ReservationServiceTest.lambda$saveReservation_ShouldThrowException_WhenRoomUnavailable$0(ReservationServiceTest.java:54)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+com.example.reservation.service.ReservationServiceTest.saveReservation_ShouldReturnSavedReservation -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.client.RestTemplate.getForObject(String, java.lang.Class, Object[])" because "this.restTemplate" is null
+	at com.example.reservation.service.ReservationService.isRoomAvailable(ReservationService.java:84)
+	at com.example.reservation.service.ReservationService.saveReservation(ReservationService.java:35)
+	at com.example.reservation.service.ReservationServiceTest.saveReservation_ShouldReturnSavedReservation(ReservationServiceTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
