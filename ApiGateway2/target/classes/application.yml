@@ -1,0 +1,60 @@
+
+spring:
+  application:
+   name:
+    ApiGateway
+  cloud:
+    gateway:
+      routes:
+        - id: Room
+          uri: http://localhost:8086
+          predicates:
+            - Path=/room/**
+            
+        - id: Staff
+          uri: http://localhost:8091
+          predicates:
+            - Path=/staff/**  
+            
+        - id: Booking
+          uri: http://localhost:8082
+          predicates:
+            - Path=/booking/**
+            
+        - id: Inventory
+          uri: http://localhost:8084
+          predicates:
+            - Path=/inventory/** 
+             
+        - id: Guest
+          uri: http://localhost:8083
+          predicates:
+            - Path=/guest/**
+            
+        - id: IssueBill
+          uri: http://localhost:8098
+          predicates:
+            - Path=/issuebill/**  
+            
+        - id: Payment
+          uri: http://localhost:8087
+          predicates:
+            - Path=/payment/**
+            
+        - id: Reservation
+          uri: http://localhost:8090
+          predicates:
+            - Path=/reservation/**  
+            
+        - id: User
+          uri: http://localhost:8088
+          predicates:
+            - Path=/user/**
+        
+        
+ 
+
+          
+server:
+  port:
+    9092
