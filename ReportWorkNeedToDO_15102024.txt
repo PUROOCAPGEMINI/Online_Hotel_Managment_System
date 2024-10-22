@@ -33,27 +33,17 @@
 	Usage examples.
 	Contact information for questions.
 
-4. User Manual
-	Create a document or guide for end-users detailing how to use the application. Include:
-	Step-by-step instructions for key functionalities.
-	Troubleshooting tips.
-
-5. Technical Documentation
+4. Technical Documentation
 	Detailed technical documentation for developers, including:
 	Code structure.
 	Configuration settings.
 	Dependency management.
 	Development environment setup.
 
-6. Deployment Guide
+5. Deployment Guide
 	Instructions on how to deploy the application, including:
 	Server requirements.
 	Configuration files.
 	Database setup.
 
-7. Demo Video (Optional)
-	Record a video walkthrough demonstrating the application's features and functionalities.
-	Final Steps
-	Review and Edit: Ensure that all documents are clear, concise, and free of errors.
-	Format Consistently: Maintain consistent formatting across all documents and presentations.
-	Practice Your Presentation: Be prepared to present and answer questions about your project.
+
